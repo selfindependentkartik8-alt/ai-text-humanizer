@@ -746,46 +746,138 @@ export default function Home() {
 
       </section>
 
-      {/* FOOTER */}
+ {/* ================================================= */}
+{/* FOOTER */}
+{/* ================================================= */}
 
-      <footer className="relative z-10 border-t border-[#d4a72c]/10 px-4 py-10">
+<footer className="relative z-10 border-t border-[#d4a72c]/10 px-4 py-10">
+  <div className="mx-auto max-w-6xl">
 
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
+    {/* Related Tools */}
+    <div className="mb-10 text-center">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#d4a72c]">
+        Explore More
+      </p>
 
-          <div className="flex items-center gap-3">
+      <h3 className="mt-2 text-xl font-bold text-white">
+        More AI Writing Tools
+      </h3>
 
-            <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-[#d4a72c]/20">
+      <p className="mx-auto mt-2 max-w-xl text-sm text-zinc-500">
+        Explore more AI-powered tools from KrishAIWorks to write,
+        improve, and optimize your content.
+      </p>
+    </div>
 
-              <img
-                src="/logo.png"
-                alt="KrishAIWorks"
-                className="h-full w-full rounded-full object-cover"
-              />
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 
-            </div>
-
-            <div>
-
-              <p className="text-sm font-bold">
-                KrishAIWorks
-              </p>
-
-              <p className="text-xs text-zinc-600">
-                AI Solutions That Work
-              </p>
-
-            </div>
-
-          </div>
-
-          <p className="text-xs text-zinc-600">
-            © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
-          </p>
-
+      {/* AI Blog Generator */}
+      <a
+        href="https://aibloggenerator.krishaiworks.com/"
+        className="group rounded-2xl border border-[#d4a72c]/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-[#d4a72c]/30 hover:bg-[#d4a72c]/[0.05]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#d4a72c]/20 bg-[#d4a72c]/10 text-lg">
+          ✍️
         </div>
 
-      </footer>
+        <h4 className="font-semibold text-white transition-colors group-hover:text-[#d4a72c]">
+          AI Blog Generator
+        </h4>
 
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Create high-quality blog content with the power of AI.
+        </p>
+      </a>
+
+      {/* AI Grammar & Writing Fixer */}
+      <a
+        href="https://aigrammarwritingfixer.krishaiworks.com/"
+        className="group rounded-2xl border border-[#d4a72c]/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-[#d4a72c]/30 hover:bg-[#d4a72c]/[0.05]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#d4a72c]/20 bg-[#d4a72c]/10 text-lg">
+          ✨
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-[#d4a72c]">
+          AI Grammar & Writing Fixer
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Fix grammar, spelling, and writing mistakes instantly.
+        </p>
+      </a>
+
+      {/* AI LinkedIn Post Generator */}
+      <a
+        href="https://ailinkedinpostgenerator.krishaiworks.com/"
+        className="group rounded-2xl border border-[#d4a72c]/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-[#d4a72c]/30 hover:bg-[#d4a72c]/[0.05]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#d4a72c]/20 bg-[#d4a72c]/10 text-lg">
+          💼
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-[#d4a72c]">
+          AI LinkedIn Post Generator
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Generate engaging and professional LinkedIn posts with AI.
+        </p>
+      </a>
+
+      {/* AI Email Writer */}
+      <a
+        href="https://aiemailwriter.krishaiworks.com/"
+        className="group rounded-2xl border border-[#d4a72c]/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-[#d4a72c]/30 hover:bg-[#d4a72c]/[0.05]"
+      >
+        <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border border-[#d4a72c]/20 bg-[#d4a72c]/10 text-lg">
+          📧
+        </div>
+
+        <h4 className="font-semibold text-white transition-colors group-hover:text-[#d4a72c]">
+          AI Email Writer
+        </h4>
+
+        <p className="mt-2 text-xs leading-5 text-zinc-500">
+          Write clear, professional emails in seconds with AI.
+        </p>
+      </a>
+
+    </div>
+
+    {/* Main Footer */}
+    <div className="mt-10 flex flex-col items-center justify-between gap-5 border-t border-white/5 pt-8 text-center sm:flex-row sm:text-left">
+
+      <div className="flex items-center gap-3">
+
+        <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-[#d4a72c]/20">
+          <img
+            src="/logo.png"
+            alt="KrishAIWorks"
+            className="h-full w-full rounded-full object-cover"
+          />
+        </div>
+
+        <div>
+          <p className="text-sm font-bold text-white">
+            KrishAIWorks
+          </p>
+
+          <p className="text-xs text-zinc-600">
+            AI Solutions That Work
+          </p>
+        </div>
+
+      </div>
+
+      <p className="text-xs text-zinc-600">
+        © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+      </p>
+
+    </div>
+
+  </div>
+</footer>
     </main>
   );
 }
